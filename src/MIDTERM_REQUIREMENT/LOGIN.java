@@ -27,11 +27,13 @@ public class LOGIN extends javax.swing.JFrame {
     private void initComponents() {
 
         jPanel1 = new javax.swing.JPanel();
-        jTextField2 = new javax.swing.JTextField();
-        jButton1 = new javax.swing.JButton();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        jTUser = new javax.swing.JTextField();
+        jPassword1 = new javax.swing.JPasswordField();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
+        jBlogin1 = new javax.swing.JButton();
+        jBsignup = new javax.swing.JButton();
+        jBlogout1 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
@@ -49,31 +51,24 @@ public class LOGIN extends javax.swing.JFrame {
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 255, 255), 2, true), "LOGIN", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Sylfaen", 1, 24), new java.awt.Color(0, 0, 0))); // NOI18N
         jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField2.setBackground(new java.awt.Color(20, 20, 20));
-        jTextField2.setForeground(new java.awt.Color(255, 255, 255));
-        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 30, 30), 2));
-        jTextField2.addActionListener(new java.awt.event.ActionListener() {
+        jTUser.setBackground(new java.awt.Color(255, 255, 255));
+        jTUser.setForeground(new java.awt.Color(0, 0, 0));
+        jTUser.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 30, 30), 2));
+        jTUser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jTextField2ActionPerformed(evt);
+                jTUserActionPerformed(evt);
             }
         });
-        jPanel1.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 240, 50));
+        jPanel1.add(jTUser, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 100, 240, 50));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(10, 10, 10));
-        jButton1.setText("LOGIN");
-        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 30, 30), 2));
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        jPassword1.setBackground(new java.awt.Color(255, 255, 255));
+        jPassword1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(10, 10, 10), 2));
+        jPassword1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                jPassword1ActionPerformed(evt);
             }
         });
-        jPanel1.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 240, 100, 40));
-
-        jPasswordField1.setBackground(new java.awt.Color(10, 10, 10));
-        jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(10, 10, 10), 2));
-        jPanel1.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 240, 50));
+        jPanel1.add(jPassword1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 170, 240, 50));
 
         jLabel3.setForeground(new java.awt.Color(20, 20, 20));
         jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/icons8-user-40.png"))); // NOI18N
@@ -82,6 +77,42 @@ public class LOGIN extends javax.swing.JFrame {
         jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/icons8-password-40.png"))); // NOI18N
         jLabel4.setText("jLabel4");
         jPanel1.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 170, 40, 50));
+
+        jBlogin1.setBackground(new java.awt.Color(255, 255, 255));
+        jBlogin1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jBlogin1.setForeground(new java.awt.Color(10, 10, 10));
+        jBlogin1.setText("LOGIN");
+        jBlogin1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 30, 30), 2));
+        jBlogin1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBlogin1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jBlogin1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 250, 100, 30));
+
+        jBsignup.setBackground(new java.awt.Color(255, 255, 255));
+        jBsignup.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jBsignup.setForeground(new java.awt.Color(10, 10, 10));
+        jBsignup.setText("SIGNUP");
+        jBsignup.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 30, 30), 2));
+        jBsignup.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBsignupActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jBsignup, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 310, 100, 30));
+
+        jBlogout1.setBackground(new java.awt.Color(255, 255, 255));
+        jBlogout1.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jBlogout1.setForeground(new java.awt.Color(10, 10, 10));
+        jBlogout1.setText("LOGOUT");
+        jBlogout1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(30, 30, 30), 2));
+        jBlogout1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jBlogout1ActionPerformed(evt);
+            }
+        });
+        jPanel1.add(jBlogout1, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 250, 100, 30));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 100, 480, 400));
 
@@ -119,13 +150,25 @@ public class LOGIN extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jTextField2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField2ActionPerformed
+    private void jTUserActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTUserActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jTextField2ActionPerformed
+    }//GEN-LAST:event_jTUserActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void jBlogin1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBlogin1ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_jBlogin1ActionPerformed
+
+    private void jBsignupActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBsignupActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBsignupActionPerformed
+
+    private void jPassword1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPassword1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jPassword1ActionPerformed
+
+    private void jBlogout1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jBlogout1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jBlogout1ActionPerformed
 
     /**
      * @param args the command line arguments
@@ -163,7 +206,9 @@ public class LOGIN extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jBlogin1;
+    private javax.swing.JButton jBlogout1;
+    private javax.swing.JButton jBsignup;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -171,12 +216,12 @@ public class LOGIN extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JPasswordField jPassword1;
     private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator3;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
-    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTUser;
     // End of variables declaration//GEN-END:variables
 }

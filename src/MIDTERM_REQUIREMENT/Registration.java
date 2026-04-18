@@ -31,19 +31,20 @@ public class Registration extends javax.swing.JFrame {
         jLabel8 = new javax.swing.JLabel();
         jSeparator1 = new javax.swing.JSeparator();
         jPanel2 = new javax.swing.JPanel();
-        jTextField1 = new javax.swing.JTextField();
-        jTextField2 = new javax.swing.JTextField();
-        jTextField3 = new javax.swing.JTextField();
-        jTextField4 = new javax.swing.JTextField();
-        jTextField5 = new javax.swing.JTextField();
-        jPasswordField1 = new javax.swing.JPasswordField();
+        jTusername = new javax.swing.JTextField();
+        jTfirstname = new javax.swing.JTextField();
+        jTmiddlename = new javax.swing.JTextField();
+        jTlastname = new javax.swing.JTextField();
+        jTaddress = new javax.swing.JTextField();
+        jPassregister = new javax.swing.JPasswordField();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        jBregister = new javax.swing.JButton();
+        jLabel9 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setBackground(new java.awt.Color(10, 10, 10));
@@ -55,7 +56,7 @@ public class Registration extends javax.swing.JFrame {
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
         jLabel1.setFont(new java.awt.Font("Tahoma", 1, 25)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(10, 10, 10));
-        jLabel1.setText("Register");
+        jLabel1.setText("REGISTRATION");
         jPanel1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 20, 230, 60));
 
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/icons8-signing-a-document-48.png"))); // NOI18N
@@ -69,35 +70,35 @@ public class Registration extends javax.swing.JFrame {
         jPanel2.setForeground(new java.awt.Color(20, 20, 20));
         jPanel2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jTextField1.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField1.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel2.add(jTextField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 270, 40));
+        jTusername.setBackground(new java.awt.Color(255, 255, 255));
+        jTusername.setForeground(new java.awt.Color(0, 0, 0));
+        jTusername.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel2.add(jTusername, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 280, 270, 40));
 
-        jTextField2.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField2.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField2.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel2.add(jTextField2, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 270, 40));
+        jTfirstname.setBackground(new java.awt.Color(255, 255, 255));
+        jTfirstname.setForeground(new java.awt.Color(0, 0, 0));
+        jTfirstname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel2.add(jTfirstname, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 70, 270, 40));
 
-        jTextField3.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField3.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField3.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel2.add(jTextField3, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 270, 40));
+        jTmiddlename.setBackground(new java.awt.Color(255, 255, 255));
+        jTmiddlename.setForeground(new java.awt.Color(0, 0, 0));
+        jTmiddlename.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel2.add(jTmiddlename, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 120, 270, 40));
 
-        jTextField4.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField4.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField4.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel2.add(jTextField4, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 270, 40));
+        jTlastname.setBackground(new java.awt.Color(255, 255, 255));
+        jTlastname.setForeground(new java.awt.Color(0, 0, 0));
+        jTlastname.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel2.add(jTlastname, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 180, 270, 40));
 
-        jTextField5.setBackground(new java.awt.Color(255, 255, 255));
-        jTextField5.setForeground(new java.awt.Color(0, 0, 0));
-        jTextField5.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel2.add(jTextField5, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 270, 40));
+        jTaddress.setBackground(new java.awt.Color(255, 255, 255));
+        jTaddress.setForeground(new java.awt.Color(0, 0, 0));
+        jTaddress.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel2.add(jTaddress, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 230, 270, 40));
 
-        jPasswordField1.setBackground(new java.awt.Color(255, 255, 255));
-        jPasswordField1.setForeground(new java.awt.Color(0, 0, 0));
-        jPasswordField1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(10, 10, 10), 2));
-        jPanel2.add(jPasswordField1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 270, 40));
+        jPassregister.setBackground(new java.awt.Color(255, 255, 255));
+        jPassregister.setForeground(new java.awt.Color(0, 0, 0));
+        jPassregister.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(10, 10, 10), 2));
+        jPanel2.add(jPassregister, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 270, 40));
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
@@ -135,12 +136,15 @@ public class Registration extends javax.swing.JFrame {
         jLabel7.setText("Username");
         jPanel2.add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 280, 70, 40));
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 0, 0));
-        jButton1.setText("Register");
-        jButton1.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
-        jPanel2.add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 390, 140, 40));
+        jBregister.setBackground(new java.awt.Color(255, 255, 255));
+        jBregister.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jBregister.setForeground(new java.awt.Color(0, 0, 0));
+        jBregister.setText("Register");
+        jBregister.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        jPanel2.add(jBregister, new org.netbeans.lib.awtextra.AbsoluteConstraints(289, 390, 140, 40));
+
+        jLabel9.setIcon(new javax.swing.ImageIcon(getClass().getResource("/ICONS/icons8-registration-64.png"))); // NOI18N
+        jPanel2.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 390, 80, 80));
 
         getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 110, 480, 500));
 
@@ -183,7 +187,7 @@ public class Registration extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jBregister;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -192,14 +196,15 @@ public class Registration extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
+    private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JPasswordField jPasswordField1;
+    private javax.swing.JPasswordField jPassregister;
     private javax.swing.JSeparator jSeparator1;
-    private javax.swing.JTextField jTextField1;
-    private javax.swing.JTextField jTextField2;
-    private javax.swing.JTextField jTextField3;
-    private javax.swing.JTextField jTextField4;
-    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTaddress;
+    private javax.swing.JTextField jTfirstname;
+    private javax.swing.JTextField jTlastname;
+    private javax.swing.JTextField jTmiddlename;
+    private javax.swing.JTextField jTusername;
     // End of variables declaration//GEN-END:variables
 }
